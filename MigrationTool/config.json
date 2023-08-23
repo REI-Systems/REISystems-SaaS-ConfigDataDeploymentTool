@@ -1,0 +1,669 @@
+{
+    "src": [
+        {
+            "user": "manu.admin@nfwf.org.dev",
+            "password": "NFWF_2022$!!b",
+            "endpoint": "https://nfwfegms--dev.sandbox.my.salesforce.com/services/Soap/u/25.0"
+        }
+    ],
+    "target": [
+        {
+            "user": "krishnacr7@reisystems.in.ksorg",
+            "password": "Salesforce2023",
+            "endpoint": "https://test8-internal--ksorg.sandbox.my.salesforce.com/services/Soap/u/25.0"
+        }
+    ],
+    "srcToTarget": [
+        {
+            "firstTimeMigration" :  false,
+            "targetOrgPrefix" : "CS28",
+            "targetOrgAlternateOwnerId" : "0054T000001V8h6",
+            "appDataInitializer" : "com.gg.common.GovGrantsInitializer",
+            "srcManagedPackageNamespace" : "GNT__",
+            "targetManagedPackageNamespace": "GNT__",
+            "unwantedLayouts" : "ListEmail-List Email Layout,CommunityMemberLayout-Community Member Layout,WorkReward,CommunityMemberLayout,WorkOrderLineItem,WorkRewardFundType,WorkRewardFund,WorkOrder,SocialPersona,Account,Case,ContentVersion,CaseClose,CampaignMember,Campaign,Contact,DandBCompany,DuplicateRecordSet,EmailMessage,FeedItem,Goal,GoalLink,Lead,Macro,Metric,Opportunity,OpportunityLineItem,Order,OrderItem,JobTracker,Pricebook2,PricebookEntry,Product2,Question,Reply,SOSSession,SOSSessionActivity,Solution,UserProvAccount,UserProvisioningLog,UserProvisioningRequest,WorkCoaching,WorkFeedback,WorkFeedbackQuestion,WorkFeedbackQuestionSet,WorkFeedbackRequest,WorkFeedbackTemplate,WorkPerformanceCycle,CollaborationGroup,ProfileSkill,Quote,ProfileSkillEndorsement,ProfileSkillUser,WorkThanks,WorkBadgeDefinition,WorkBadge,WorkAccess,QuoteLineItem,Campaign,Event,Contact,Lead,Task,ChannelProgram-Channel Program Layout,ChannelProgramLevel-Channel Program Level Layout,ChannelProgramMember-Channel Program Member Layout,PartnerFundAllocation-Partner Fund Allocation Layout,PartnerFundClaim-Partner Fund Claim Layout,PartnerFundRequest-Partner Fund Request Layout,PartnerMarketingBudget-Partner Marketing Budget Layout,Scorecard-Scorecard Layout,ScorecardMetric-Scorecard Metric Layout,Macro-Macro Layout,SocialPost-Social Post,GNT__DataTableConfig__c-GNT__WBS,GNT__AccordionContent__c-GNT__Copy of Accordion Content Config Layout Admin,GNT__ChartConfig__c-GNT__Chart Config Layout,GNT__TaskConfig__c-GNT__Task Config Layout,GNT__DataTableConfig__c-GNT__WBS,SocialPersona-Social Persona Layout,WorkBadgeDefinition-Badge Layout,WorkOrder-Work Order Layout,WorkOrderLineItem-Work Order Line Item Layout,WorkRewardFund-Reward Fund Layout,WorkRewardFundType-Reward Fund Type Layout,WorkBadge-Badge Received Layout,WorkReward-Reward Layout",
+            "unwantedFields" :"Account.APXTConga4__Conga_Composer_OAuth,Application__c.Status__c,Account.APXTConga4__Conga_Mail_Merge,Case.APXTConga4__Conga_Composer_OAuth,Case.APXTConga4__Conga_Mail_Merge,Contact.APXTConga4__Conga_Mail_Merge,User.APXTConga4__Conga_Composer_OAuth,User.APXTConga4__Conga_Mail_Merge,Contact.APXTConga4__Conga_Composer_OAuth,Case.SourceId,Case.IsSelfClosed,Account.DandbCompanyId,Account.YearStarted,Account.DunsNumber,Account.NaicsCode,Account.NaicsDesc,Account.Tradestyle,Contact.CanAllowPortalSelfReg",
+            "unwantedClasses" : "ContentFilesCtrl,ContentFilesCtrlTest,ChatterAnswersAuthProviderRegTest,ChatterAnswersAuthProviderRegistration,ChatterAnswersEscalationTriggerTest,ChatterAnswersCreateAccountTest,ChatterAnswersRegistration,LightningForgotPasswordController,LightningForgotPasswordControllerTest,LightningLoginFormController,LightningLoginFormControllerTest,LightningSelfRegisterController,LightningSelfRegisterControllerTest,",
+            "isCustomSettingsRequired"     : false,
+            "isAccountContactMigrationRequired" : false,
+            "isKeyValueStoreMigrationRequired" : false,
+            "isMigrationRequiredFromAllUsers" : true
+
+    }
+    ],
+   "dateTimeWhereClauseForMigration":[
+		{
+			"dateLiteralOrDateTime"     : "",
+			"operator"        			: "="
+		}
+	],
+
+	"configSobjects": [
+
+		{
+			"objectNameWithoutNamespace":	"InterfaceConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"ApprovalDecisionConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"CustomAppFooterConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"DynamicFieldConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"EmailAttachmentConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"FrameworkConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"PageMessageStyleConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"Picklist__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"ProfileDropDownConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"ThemeConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"UsefulLinkConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"ApexJob__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	20,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"HelpConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	20,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"SobjectConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"EmailTemplateConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"MessageConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "GNT__PageBlockConfig__c" , "package" : false },{"fieldAPINameWithoutNamespace" : "GNT__PageLayoutConfig__c" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"RecordCopyConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"CustomApp__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"DataTableConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"SobjectActionConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"DataTableAction__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"DataTableDetailConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"FlexGridConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"GridHeaderConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"GridDetailConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"PageLayoutConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"TabConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"PageTemplate__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"PackageTypeConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "" , "package" : false }],
+			"whereClause":	"GNT__LayoutForm__c != null",
+			"batchSize":	1,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"Package__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"PackageFormConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"SObjectLayoutConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"PhaseConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"SObjectPhaseConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"ErrorMessageConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"TechnicalLinkConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"AccordionHeader__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"AccordionSubHeader__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"AccordionContent__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"ExternalLinkConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"SearchConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"CalendarConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"ChartConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"chartDetailConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"PageBlockConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"PageBlockDetailConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"PageLayoutActionConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"PageAttachmentConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"LayoutBusinessRuleConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"StepProgressbarHeader__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"StepProgressbarDetail__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"TaskConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		
+		{
+			"objectNameWithoutNamespace":	"CongaQuery__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"Highlight__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"MessageConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"PageLayoutCongaQueryConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"BusinessShareConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"FlexTableFilterListViewConfig__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},		
+		{
+			"objectNameWithoutNamespace":	"ApprovalProcessStepCache__c",
+			"packaged":	true,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		}
+		
+		
+	],
+    "productMasterSobjects": [
+		{
+			"objectNameWithoutNamespace":	"KeyPerformanceIndicator__c",
+			"packaged":	false,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"BudgetCategory__c",
+			"packaged":	false,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+	
+		},
+		{
+			"objectNameWithoutNamespace":	"FiscalYear__c",
+			"packaged":	false,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+	
+		},
+		{
+			"objectNameWithoutNamespace":	"BudgetCategoryMapping__c",
+			"packaged":	false,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+	
+		},
+		{
+			"objectNameWithoutNamespace":	"ReviewStep__c",
+			"packaged":	false,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"DefaultStep__c = true",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+	
+		},
+		{
+			"objectNameWithoutNamespace":	"ReviewPanel__c",
+			"packaged":	false,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"ReviewStep__r.DefaultStep__c= true",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"ReviewPanelCategory__c",
+			"packaged":	false,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"ReviewPanel__r.ReviewStep__r.DefaultStep__c= true",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"ReviewPanelCategoryQuestion__c",
+			"packaged":	false,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"ReviewPanelCategory__r.ReviewPanel__r.ReviewStep__r.DefaultStep__c= true",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		},
+		{
+			"objectNameWithoutNamespace":	"ServiceArea__c",
+			"packaged":	false,
+			"relationshipRecordsMustFoundInTargetOrg":	true,
+			"excludeFields": [{"fieldAPINameWithoutNamespace" : "SetupOwnerId" , "package" : false }],
+			"whereClause":	"",
+			"batchSize":	500,
+			"deleteTargetRecords":	false
+		}
+		
+
+    ]
+
+
+}

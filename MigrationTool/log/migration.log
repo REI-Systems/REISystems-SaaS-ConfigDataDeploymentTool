@@ -1,0 +1,28 @@
+22 Aug 2023, 13:54:48 ERROR [ForceSessionManager.java:login():58] - java.lang.NullPointerException
+22 Aug 2023, 13:55:14 WARN [JavaUtils.java:isAttachmentSupported():1308] - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+22 Aug 2023, 14:01:15 WARN [JavaUtils.java:isAttachmentSupported():1308] - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+22 Aug 2023, 14:01:19 INFO [ForceSessionManager.java:login():137] - ForceSessionManager login successful for src; User: manu.admin@nfwf.org.dev; SessionId: 00D8A000000MjNd!AR0AQADSh30PH4xg6TOMQ3i0s64Mb5PpVnCxSwlxd6XQgkpOYQyVewMG5lDb8k_wqJxsNC0QreLhB6J12RaXXs1FNLECF.1S
+22 Aug 2023, 14:01:22 INFO [ForceSessionManager.java:login():137] - ForceSessionManager login successful for target; User: krishnacr7@reisystems.in.ksorg; SessionId: 00D230000004isg!AQIAQOKTeVlv0_Qxn13aomfMtPOgmY23cibXTEQHx1fSAG0d7aaKEYeJGbIf.3OKTcmDbG3NVc4vm6Z__8HkJQAF6phrBAaQ
+22 Aug 2023, 14:01:22 INFO [JSONFileReader.java:readSrcToTargetJSON():46] - loading require details for source to target org from JSON File.
+22 Aug 2023, 14:01:22 INFO [ForceServiceRaw.java:queryIt():296] - [target] SOQL: Select Id, Username from User where Id='0054T000001V8h6'
+22 Aug 2023, 14:01:23 INFO [ForceServiceRaw.java:queryIt():321] - [target] Total records selected: 1
+22 Aug 2023, 14:01:23 INFO [JSONFileReader.java:migrationItemsReader():35] - loading specificConfigSobjects from JSON File.
+22 Aug 2023, 14:01:23 INFO [JSONFileReader.java:migrationItemsReader():35] - loading configSobjects from JSON File.
+22 Aug 2023, 14:01:23 INFO [JSONFileReader.java:migrationItemsReader():35] - loading productMasterSobjects from JSON File.
+22 Aug 2023, 14:01:23 INFO [JSONFileReader.java:getSrcVo():56] - loading require details for source org from JSON File.
+22 Aug 2023, 14:01:23 INFO [ForceServiceRaw.java:queryIt():296] - [src] SOQL: Select Id, Username, Firstname, Lastname from User
+22 Aug 2023, 14:01:25 INFO [ForceServiceRaw.java:queryIt():321] - [src] Total records selected: 199
+22 Aug 2023, 14:01:25 INFO [JSONFileReader.java:getDateTimeVO():82] - loading require details for where clause related to date time from JSON File.
+22 Aug 2023, 17:28:59 WARN [JavaUtils.java:isAttachmentSupported():1308] - Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+22 Aug 2023, 17:29:04 INFO [ForceSessionManager.java:login():137] - ForceSessionManager login successful for src; User: manu.admin@nfwf.org.dev; SessionId: 00D8A000000MjNd!AR0AQBxy5I1Lm1wc.LtGUVF_uuVykbK2eoIvvF_fq5b5unGxQBXeEkaiFB5Gy2bWoSS1yO9rUc2EejZAYe6Etl0E8Jf86Oho
+22 Aug 2023, 17:29:07 INFO [ForceSessionManager.java:login():137] - ForceSessionManager login successful for target; User: krishnacr7@reisystems.in.ksorg; SessionId: 00D230000004isg!AQIAQOKTeVlv0_Qxn13aomfMtPOgmY23cibXTEQHx1fSAG0d7aaKEYeJGbIf.3OKTcmDbG3NVc4vm6Z__8HkJQAF6phrBAaQ
+22 Aug 2023, 17:29:07 INFO [JSONFileReader.java:readSrcToTargetJSON():46] - loading require details for source to target org from JSON File.
+22 Aug 2023, 17:29:07 INFO [ForceServiceRaw.java:queryIt():296] - [target] SOQL: Select Id, Username from User where Id='0054T000001V8h6'
+22 Aug 2023, 17:29:09 INFO [ForceServiceRaw.java:queryIt():321] - [target] Total records selected: 1
+22 Aug 2023, 17:29:09 INFO [JSONFileReader.java:migrationItemsReader():35] - loading specificConfigSobjects from JSON File.
+22 Aug 2023, 17:29:09 INFO [JSONFileReader.java:migrationItemsReader():35] - loading configSobjects from JSON File.
+22 Aug 2023, 17:29:09 INFO [JSONFileReader.java:migrationItemsReader():35] - loading productMasterSobjects from JSON File.
+22 Aug 2023, 17:29:09 INFO [JSONFileReader.java:getSrcVo():56] - loading require details for source org from JSON File.
+22 Aug 2023, 17:29:09 INFO [ForceServiceRaw.java:queryIt():296] - [src] SOQL: Select Id, Username, Firstname, Lastname from User
+22 Aug 2023, 17:29:11 INFO [ForceServiceRaw.java:queryIt():321] - [src] Total records selected: 199
+22 Aug 2023, 17:29:11 INFO [JSONFileReader.java:getDateTimeVO():82] - loading require details for where clause related to date time from JSON File.

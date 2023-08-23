@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<service>
+   <organizations>
+              <organization orgName="src" propertyFilename="org-src.properties"/>
+              <organization orgName="target" propertyFilename="org-target.properties"/>
+    </organizations>  
+</service>   
+   

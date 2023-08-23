@@ -1,0 +1,6 @@
+/DeleteNativeRecords.class
+/DeleteObsoleteTargetRecords.class
+/MigrateKeyValueStore.class
+/MigrateUserPreference.class
+/MigrateGuestUsers.class
+/MigrateHierarchyCustomSettings.class

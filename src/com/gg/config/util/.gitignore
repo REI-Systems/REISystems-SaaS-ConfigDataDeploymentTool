@@ -1,0 +1,16 @@
+/AppUtils.class
+/PrepareTargetRecord.class
+/QueryTool.class
+/RecordTypeCache.class
+/SchemaManager.class
+/SourceSchema.class
+/SourceSchema2.class
+/TargetSchema.class
+/SourceOrgSchema.class
+/TargetOrgSchema.class
+/ConfigDataScanner$Match.class
+/ConfigDataScanner.class
+/ConfigDataScannerUpdate.class
+/MigrateAccountContactFull.class
+/CreateDataDictionary.class
+/SObjectDataDictionary.class

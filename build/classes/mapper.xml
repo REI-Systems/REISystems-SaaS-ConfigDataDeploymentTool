@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<service>
+  <mapper>
+ 	<map sfObject="User" class="com.gg.meta.vo.UserVO"/>
+ 	<map sfObject="Profile" class="com.gg.meta.vo.ProfileVO"/>
+	<map sfObject="OrgWideEmailAddress" class="com.gg.meta.vo.OrgWideEmailAddressVO"/>
+	<map sfObject="DictionarySObject__c" class="com.gg.dictionary.DictionarySObjectVO"/>
+	<map sfObject="DictionaryField__c" class="com.gg.dictionary.DictionaryFieldVO"/>
+	<map sfObject="DictionaryLayout__c" class="com.gg.dictionary.DictionaryLayoutVO"/>
+  </mapper>
+</service>   

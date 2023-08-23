@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<service>
+   <organizations>
+              <organization orgName="src" jsonFilename="config.json"/>
+              <organization orgName="target" jsonFilename="config.json"/>
+    </organizations>  
+</service>   
