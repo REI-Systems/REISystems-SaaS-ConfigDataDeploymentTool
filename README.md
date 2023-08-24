@@ -28,6 +28,7 @@ The config.json has below key fields -
 
 SRC: 
 It contains credentials for source org.
+
 Description: 
 user  : This key refers to a string value in which you can enter username.
 password: This key refers to a string value in which you can enter password.
@@ -35,6 +36,7 @@ endpoint: This key refers to a string value in which you can enter endpoint.
 
 TARGET:
 It contains credentials for target org.
+
 Description: 
 user: This key refers to a string value in which you can enter username.
 password: This key refers to a string value in which you can enter password.
@@ -42,6 +44,7 @@ endpoint: This key refers to a string value in which you can enter endpoint.
 
 SRC-TO-TARGET:
 It contains required input for migration.
+
 Description: 
 firstTimeMigration: This key refers to a Boolean value. A true or false value can be entered based on the requirement. 
 targetOrgPrefix: This key refers to a String value. Used to configure target org instance name. It can be obtained from company 
@@ -65,7 +68,8 @@ isMigrationRequiredFromAllUsers: This key refers to a Boolean value. A true or f
 
 DATE-TIME-WHERE-CLAUSE-FOR-MIGRATION :
 It contains information for date-time where condition for data to be migrated. This will be applicable to all the config-SObjects added in the config.json
-Description: 
+
+Description:
 dateLiteralOrDateTime: This key refers to a String value. This value used to set where clause for all objects to filter data by date 
                        literal.
 operator: This key refers to a String value. This value used to set operator for above dateLiteralOrDateTime where condition
@@ -80,6 +84,7 @@ Note â€“ If we do not want any date time criteria please use the below syntax â€
  
 CONFIG-SOBJECTS AND PRODUCT-MASTER-SOBJECTS:
 It contains information for List of config and Product Master SObjects respectively.
+
 Description: 
 objectNameWithoutNamespace: This key refers to a String value. This field is used to enter the object name without namespace.
 packaged: This key refers to a Boolean value. This identifies if the object mentioned is from packaged source or not.	
