@@ -1,23 +1,23 @@
 {
     "src": [
         {
-            "user": "manu.admin@nfwf.org.dev",
-            "password": "NFWF_2022$!!b",
-            "endpoint": "https://nfwfegms--dev.sandbox.my.salesforce.com/services/Soap/u/25.0"
+            "user": "",
+            "password": "",
+            "endpoint": ""
         }
     ],
     "target": [
         {
-            "user": "krishnacr7@reisystems.in.ksorg",
-            "password": "Salesforce2023",
-            "endpoint": "https://test8-internal--ksorg.sandbox.my.salesforce.com/services/Soap/u/25.0"
+            "user": "",
+            "password": "",
+            "endpoint": ""
         }
     ],
     "srcToTarget": [
         {
             "firstTimeMigration" :  false,
-            "targetOrgPrefix" : "CS28",
-            "targetOrgAlternateOwnerId" : "0054T000001V8h6",
+            "targetOrgPrefix" : "",
+            "targetOrgAlternateOwnerId" : "",
             "appDataInitializer" : "com.gg.common.GovGrantsInitializer",
             "srcManagedPackageNamespace" : "GNT__",
             "targetManagedPackageNamespace": "GNT__",
